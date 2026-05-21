@@ -1,0 +1,264 @@
+{
+  "info": {
+    "_postman_id": "23d643a6-561d-420f-941f-3f8dd3acf697",
+    "name": "backendassignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46095649"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5000/api/v1/auth/register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/v1/auth/login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/v1/tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NTdlNGIxODVkMzdjYTdiNzRlNjM1MiIsImlhdCI6MTc1MDU5MDY2MSwiZXhwIjoxNzUwNjc3MDYxfQ.OEyHst4GpepLRPMdy7-hrO9hG9WhlnQGt-1ioSE6jKg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGViMWU2ODE0M2FkNjQ5MjAxZGZhOCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5MzQ3OTk0LCJleHAiOjE3Nzk0MzQzOTR9.rvfRBO0vQehu0ri7A1J2_ID33ZytSoaU9sxzOiULVPE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Finish Internship Assignment\",\r\n  \"description\": \"Complete backend and frontend\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/v1/tasks",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGViMWU2ODE0M2FkNjQ5MjAxZGZhOCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5MzQ4NTQ4LCJleHAiOjE3Nzk0MzQ5NDh9.kVm5KYOU50zhII61z345QYMEt3rpa48B7_e8Q2CCqxQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Finish Internship Assignment\",\r\n  \"description\": \"Complete backend and frontend\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/v1/tasks",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGViMWU2ODE0M2FkNjQ5MjAxZGZhOCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5MzQ4NTQ4LCJleHAiOjE3Nzk0MzQ5NDh9.kVm5KYOU50zhII61z345QYMEt3rpa48B7_e8Q2CCqxQ",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/v1/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/v1/tasks/6a0eb4808143ad649201dfa9",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGViMWU2ODE0M2FkNjQ5MjAxZGZhOCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5MzQ4NTQ4LCJleHAiOjE3Nzk0MzQ5NDh9.kVm5KYOU50zhII61z345QYMEt3rpa48B7_e8Q2CCqxQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"completed\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/tasks/6a0eb4808143ad649201dfa9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "tasks",
+            "6a0eb4808143ad649201dfa9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/v1/tasks/6a0eb4808143ad649201dfa9",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGViMWU2ODE0M2FkNjQ5MjAxZGZhOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTM0OTQyMiwiZXhwIjoxNzc5NDM1ODIyfQ.kZmkcoTFw9E-rx57LfYJxqsmOYrswVAKMOdaT9xRMYI",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/v1/tasks/6a0eb4808143ad649201dfa9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "tasks",
+            "6a0eb4808143ad649201dfa9"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
